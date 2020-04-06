@@ -30,3 +30,10 @@ Route::get('/categories/{category}/edit', 'CategoryController@edit');
 Route::patch('/categories/{category}', 'CategoryController@update');
 
 Route::get('/categories/{category}', 'CategoryController@show');
+
+Route::get('/categories/{category}/sizes/create', 'SizeController@create');
+
+Route::post('/categories/{category}/sizes', 'SizeController@store');
+
+Route::get('/categories/{category}/sizes/{size}', 'SizeController@show');
+
