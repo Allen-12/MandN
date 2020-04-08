@@ -37,3 +37,8 @@ Route::post('/categories/{category}/sizes', 'SizeController@store');
 
 Route::get('/categories/{category}/sizes/{size}', 'SizeController@show');
 
+Route::get('/sizes/{size}/items/create', 'ItemController@create');
+
+Route::post('/sizes/{size}/items', 'ItemController@store');
+
+Route::get('/sizes/{size}/items', 'ItemController@show');

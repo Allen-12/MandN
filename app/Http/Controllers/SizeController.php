@@ -24,10 +24,11 @@ class SizeController extends Controller
         return redirect('/categories/'.$category->id);
     }
 
-    public function show(Category $category)
+    public function show(Category $category, Size $size)
     {
         $category->load('sizes');
+//        dd($size);
 
-        return view('size.show', compact('category'));
+        return view('size.show', compact('category','size'));
     }
 }

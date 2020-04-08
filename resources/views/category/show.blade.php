@@ -1,3 +1,5 @@
+{{--This shows the details about a category i.e. the available sizes for a category--}}
+
 @extends('layouts.app')
 
 @section('content')
